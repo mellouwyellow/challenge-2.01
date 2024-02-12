@@ -8,6 +8,7 @@ h1{
     padding: 0%;
 }
 
+/*
 body{
     animation: backgroundBG 15s 
     3s infinite;
@@ -21,6 +22,21 @@ img{
     animation: imgsize 5s 
     infinite;
     border: 5px solid navy;
+}
+
+.flex-container{
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    background-color: blueviolet;
+}
+
+.item{
+width: 100px;
+height: 100px;
+margin: 20px;
+background-color: pink;
+
 }
 
 
@@ -41,7 +57,7 @@ img{
         background-color: purple;
     }
 }
-
+/*
 @keyframes imgsize{
     0%{
         width: 200px;
