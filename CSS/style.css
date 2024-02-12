@@ -1,3 +1,55 @@
 h1{
-    color: aquamarine;
+    color: navy;
+
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    animation: backgroundBG 15s 
+    3s infinite;
+}
+/* infinite animation, add 2 if i want it to run twice, or infinite for forever)
+/*write values in order of table*/
+
+img{
+    /*property: name duration, delay iteration */
+    width: 450px;
+    animation: imgsize 5s 
+    infinite;
+    border: 5px solid navy;
+}
+
+
+/* DEFINE THE ANIMATION */
+@keyframes backgroundBG{
+    /* stage - properties - values */
+    0%{
+    
+        background-color: white;
+    }
+    20%{
+        background-color:cornflowerblue;
+    }
+    50%{
+        background-color:pink;
+    }
+    100%{
+        background-color: purple;
+    }
+}
+
+@keyframes imgsize{
+    0%{
+        width: 200px;
+    }
+    50%{
+        width: 500px;
+    }
+    100%{
+        width: 200px;
+    }
 }
