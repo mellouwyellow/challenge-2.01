@@ -18,46 +18,139 @@ body{
 
 img{
     /*property: name duration, delay iteration */
-    width: 450px;
+    width: 150px;
     animation: imgsize 5s 
     infinite;
-    border: 5px solid navy;
+    border: 5px solid deeppink;
+position: center;
 }
+
+
+
 
 .flex-container{
     display: flex;
     width: 100vw;
     height: 50vh;
-    background-color: blueviolet;
+    flex-direction: row;
+    /* shifts items on main axis*/
+    justify-content: center;
+    justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
 }
 
 .item{
-width: 100px;
-height: 100px;
+width: 200px;
+height: 200px;
 margin: 20px;
 background-color: pink;
-
+padding: 10px;
+text-align: center;
+border: 4px solid purple;
 }
 
+.one img{
+    border: 10px solid cornflowerblue;
+    animation: bordercolor 5s infinite;
+}
+.two img{
+    animation: imagesize 5s infinite;
+}
+.three p{
+    animation: color 5s infinite;
+}
+p{
+    font-size: 25px;
+    color: #FF83CA;
+}
 
-/* DEFINE THE ANIMATION */
-@keyframes backgroundBG{
-    /* stage - properties - values */
+@keyframes bordercolor{
     0%{
-    
-        background-color: white;
+        border-color: cornflowerblue;
     }
     20%{
-        background-color:cornflowerblue;
+        border-color: darkorchid;
     }
-    50%{
-        background-color:pink;
+    40%{
+        border-color: deeppink;
+    }
+    60%{
+        border-color: gold;
+    }
+    80%{
+        border-color: indianred;
     }
     100%{
-        background-color: purple;
+        border-color: lavenderblush;
     }
 }
+
+@keyframes imagesize{
+    0%{
+        width: 150px;
+        height: 150px;
+    }
+    50%{
+        width: 50px;
+        height: 50px;
+    }
+    100%{
+        width: 150px;
+        height: 150px;
+    }
+}
+@keyframes color{
+    0%{
+        color: lightgreen;
+    }
+    20%{
+        color: orange;
+    }
+    40%{
+        color: plum;
+    }
+    60%{
+        color: palevioletred;
+    }
+    80%{
+        color: royalblue;
+    }
+    100%{
+        color: seagreen;
+    }
+}
+
 /*
+.nav-flex-container{
+    display: flex;
+    background-color: aquamarine;
+    width: 100vw;
+    height: 50px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-item{
+    padding: 10px;
+    padding-top: 35px;
+    height: 100%;
+}
+
+.nav-item a{
+text-decoration: none;
+color: brown;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-item:hover{
+    background-color: white;
+cursor: pointer;
+}
+*/
+
+/* DEFINE THE ANIMATION */
+/*
+
 @keyframes imgsize{
     0%{
         width: 200px;
